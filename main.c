@@ -9,6 +9,7 @@ int main(int argc, const char * argv[]) {
     head=(NodePtr)malloc(sizeof(Node));
     temp=head;
     n=(argc-1)/2;
+    if (n < 2) return 0;
 
     for(i=0;i<n-1;i++){
         temp->id=atoi(argv[i * 2 + 1]);
