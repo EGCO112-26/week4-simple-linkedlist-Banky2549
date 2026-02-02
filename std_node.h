@@ -1,12 +1,12 @@
-#ifndef node_h
-#define node_h
+#ifndef stdnode_h
+#define stdnode_h
 
 struct std_node
 {
     int id;
-    char name[30]
+    char name[30];
     struct std_node *next;
 };
 typedef struct std_node Node;
-typedef STD NodePtr;
+typedef struct std_node* NodePtr;
 #endif
